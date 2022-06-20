@@ -10,9 +10,9 @@
     <h1>Exercício 03</h1>
     <hr>
 <?php
-require_once "src/Didatico.php";
-require_once "src/Programacao.php";
-require_once "src/Tecnico.php";
+
+
+require_once "vendor/autoload.php";
 
 $livroTecnico = new Exercicio\Tecnico;
 $livroProgramacao = new Exercicio\Programacao;
@@ -83,3 +83,4 @@ $livroDidatico->setNivel(['médio', 'superior']);
 <pre> <?=var_dump($livroTecnico, $livroProgramacao, $livroDidatico)?></pre>
 </body>
 </html>
+
