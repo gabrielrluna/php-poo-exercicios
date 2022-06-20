@@ -10,24 +10,27 @@
     <h1>Exercício 03</h1>
     <hr>
 <?php
+require_once "src/Didatico.php";
+require_once "src/Programacao.php";
 require_once "src/Tecnico.php";
-$livroTecnico = new Tecnico;
+
+$livroTecnico = new Exercicio\Tecnico;
+$livroProgramacao = new Exercicio\Programacao;
+$livroDidatico = new Exercicio\Didatico;
 
 $livroTecnico->setTitulo("Desenvolvimento de Sistemas");
 $livroTecnico->setAutor("Fulano de Tal");
 $livroTecnico->setPaginas(250);
 $livroTecnico->setFormato(["digital"]);
 
-require_once "src/Programacao.php";
-$livroProgramacao = new Programacao;
+
 $livroProgramacao->setTitulo("APIs com Node.js");
 $livroProgramacao->setAutor("Beltrano dos Santos");
 $livroProgramacao->setPaginas(200);
 $livroProgramacao->setFormato(['físico']);
 $livroProgramacao->setArea("Back-End");
 
-require_once "src/Didatico.php";
-$livroDidatico = new Didatico;
+
 $livroDidatico->setTitulo("Matemática Aplicada");
 $livroDidatico->setAutor("Mariazinha da Silva");
 $livroDidatico->setPaginas(500);
